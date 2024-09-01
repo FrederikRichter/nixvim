@@ -1,6 +1,7 @@
 # Nixvim template
 
-This template gives you a good starting point for configuring nixvim standalone.
+## Usage
+```nix run github:FrederikRichter/nixvim```
 
 ## Configuring
 
