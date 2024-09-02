@@ -3,7 +3,6 @@
   imports = [ 
     ./nixvim.nix
     ./autocomplete.nix
-    ./autosession.nix
     ./betterescape.nix
     ./chadtree.nix
     ./dashboard.nix
