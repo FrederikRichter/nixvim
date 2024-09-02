@@ -4,7 +4,4 @@
     ./nixvim.nix
     ./autocomplete.nix
   ];
-
-
-
 }
