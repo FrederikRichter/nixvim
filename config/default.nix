@@ -4,5 +4,6 @@
     ./nixvim.nix
     ./autocomplete.nix
     ./autosession.nix
+    ./betterescape.nix
   ];
 }

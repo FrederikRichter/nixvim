@@ -1,5 +1,5 @@
 {
-plugins.auto-sessions = {
+plugins.auto-session = {
     enable = true;
-}
+};
 }
