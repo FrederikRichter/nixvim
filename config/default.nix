@@ -5,5 +5,10 @@
     ./autocomplete.nix
     ./autosession.nix
     ./betterescape.nix
+    ./chadtree.nix
+    ./dashboard.nix
+    ./fugitive.nix
+    ./telescope.nix
+    ./vimtex.nix
   ];
 }
