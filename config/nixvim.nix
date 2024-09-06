@@ -1,5 +1,6 @@
 {
     globals = {
+    mapleader = " ";
       # Disable useless providers
       loaded_ruby_provider = 0; # Ruby
       loaded_perl_provider = 0; # Perl
@@ -12,8 +13,8 @@
 
       providers.wl-copy.enable = true;
     };
-
-    opts = {
+    
+    options = {
       updatetime = 100; # Faster completion
 
       # Line numbers
@@ -47,6 +48,7 @@
       shiftwidth = 4; # Number of spaces used for each step of (auto)indent (local to buffer)
       expandtab = true; # Expand <Tab> to spaces in Insert mode (local to buffer)
       autoindent = true; # Do clever autoindenting
+      smartindent = true; 
 
       textwidth = 0; # Maximum width of text that is being inserted.  A longer line will be
       #   broken after white space to get this width.
