@@ -10,7 +10,7 @@
                                     if cmp.visible() then
                                     cmp.select_next_item()
                                     else
-                                    cmp.complete()
+                                    fallback() 
                                     end
                                     end, { 'i', 's' }),
                             ['<S-Tab>'] = cmp.mapping(function(fallback)
