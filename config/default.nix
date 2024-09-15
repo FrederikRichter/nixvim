@@ -1,9 +1,11 @@
+{pkgs, ...}:
 {
   # Import all your configuration modules here
   imports = [ 
     ./nixvim.nix
     ./autocomplete.nix
     # ./autosession.nix
+    ./smoothscroll.nix
     ./betterescape.nix
     ./chadtree.nix
     ./dashboard.nix
