@@ -5,8 +5,7 @@
     ./nixvim.nix
     ./autocomplete.nix
     # ./autosession.nix
-    # ./nixvim.nix
-    ./neoscroll.nix
+    #./neoscroll.nix
     ./betterescape.nix
     ./chadtree.nix
     ./dashboard.nix

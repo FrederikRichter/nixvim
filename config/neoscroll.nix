@@ -1,4 +1,10 @@
 {pkgs, ...}:
 {
-plugins.neoscroll.enable = true;
+    plugins.neoscroll ={
+        enable = true;
+        settings = {
+            mapping = {
+            };
+        };
+    };
 }
