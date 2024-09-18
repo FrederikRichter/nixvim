@@ -2,7 +2,7 @@
     plugins.vimtex = {
         enable = true;
         settings = {
-            compiler_method = "latexrun";
+            compiler_method = "lualatex";
             view_method = "zathura";
         };
     };
