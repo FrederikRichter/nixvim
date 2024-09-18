@@ -1,6 +1,6 @@
 {
     plugins.treesitter = {
-        enable = true;
+        enable = false;
         settings = {
             auto_install = false;
             ensure_installed = "all";
