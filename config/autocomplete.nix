@@ -25,11 +25,9 @@
                 '';
                 };
             sources = [
-            { name = "nvim_lsp"; }
             { name = "path"; }
             { name = "buffer"; }
             { name = "luasnip"; }
-            { name = "cmdline"; }
             { name = "git"; }
             { name = "greek"; }
             { name = "nvim_lua"; }
@@ -43,4 +41,5 @@
             ];
         };
     };
+    plugins.cmp-treesitter.enable = true;
 }

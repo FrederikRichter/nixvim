@@ -4,6 +4,7 @@
   imports = [ 
     ./nixvim.nix
     ./autocomplete.nix
+    ./treesitter.nix
     # ./autosession.nix
     #./neoscroll.nix
     ./betterescape.nix
