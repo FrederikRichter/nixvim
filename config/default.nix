@@ -3,7 +3,7 @@
   # Import all your configuration modules here
   imports = [ 
     ./nixvim.nix
-    ./autocomplete.nix
+    ./cmp.nix
     ./treesitter.nix
     # ./autosession.nix
     #./neoscroll.nix
