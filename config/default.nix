@@ -7,6 +7,7 @@
     ./treesitter.nix
     # ./autosession.nix
     #./neoscroll.nix
+    ./luasnip.nix
     ./betterescape.nix
     ./chadtree.nix
     ./dashboard.nix
@@ -14,5 +15,6 @@
     ./telescope.nix
     ./vimtex.nix
     ./oil.nix
+    ./texkasten.nix
   ];
 }
