@@ -1,4 +1,17 @@
+{pkgs, ...}:
 {
+#    performance = {
+#        byteCompileLua = {
+#            enable = true;
+#            nvimRuntime = true;
+#            configs = true;
+#            plugins = true;
+#        };
+#    };
+
+    extraConfigLuaPre = ''
+        vim.api.nvim_set_keymap("", "<Space>", "<Nop>", { noremap = true, silent = true });
+    '';
     globals = {
     mapleader = " ";
       # Disable useless providers
@@ -12,12 +25,17 @@
     };
 
     clipboard = {
-      # Use system clipboard
-      register = "unnamedplus";
+# Use system clipboard
+        register = "unnamedplus";
 
-      providers.wl-copy.enable = true;
+        providers = {
+            wl-copy = {
+                enable = true;
+                package = pkgs.wl-clipboard;
+            };
+        };
     };
-    
+
     opts = {
       updatetime = 100; # Faster completion
 

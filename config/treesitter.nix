@@ -1,9 +1,8 @@
+{pkgs, ...}:
 {
     plugins.treesitter = {
         enable = false;
         settings = {
-            auto_install = false;
-            ensure_installed = "all";
             highlight = {
                 additional_vim_regex_highlighting = true;
                 custom_captures = { };
@@ -17,5 +16,7 @@
                 enable = true;
             };
         };
+        nixvimInjections = false;
+        grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
     };
 }
