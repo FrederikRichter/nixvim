@@ -1,7 +1,7 @@
 {pkgs, ...}:
 {
     plugins.treesitter = {
-        enable = false;
+        enable = true;
         settings = {
             highlight = {
                 additional_vim_regex_highlighting = true;
@@ -16,7 +16,10 @@
                 enable = true;
             };
         };
-        nixvimInjections = false;
-        grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
+        nixvimInjections = true;
+        grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+        latex
+    ];
+  };
     };
 }
