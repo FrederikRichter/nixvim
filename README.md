@@ -1,4 +1,4 @@
-# Nixvim template
+# My Nixvim unstable config
 
 ## Usage
 ```nix run github:FrederikRichter/nixvim```
