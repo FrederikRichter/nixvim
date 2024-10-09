@@ -1,7 +1,7 @@
 {pkgs, ...}:
 {
 extraConfigLuaPost = ''
-require('texkasten').setup("texkasten")
+texkasten = require('texkasten').setup({datadir = "texkasten"})
 '';
 
 # extraPlugins = [(pkgs.vimUtils.buildVimPlugin {
