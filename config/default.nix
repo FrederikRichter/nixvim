@@ -16,5 +16,6 @@
     ./oil.nix
     #./texkasten.nix
     ./treesitter.nix
+    ./typst.nix
   ];
 }
