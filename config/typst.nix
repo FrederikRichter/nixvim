@@ -10,10 +10,13 @@ extraConfigLuaPost = ''
 -- Define a function to execute your command with the filename
 local function execute_on_save(filename)
     -- Replace 'your_command_here' with the actual command you want to run
-    local command = "typstyle -i " .. filename
+    local autofmt = "typstyle -i " .. filename
     -- Execute the command using os.execute
-    os.execute(command)
+    os.execute(autofmt)
     vim.cmd("edit!")
+
+    local compile = "typst compile " .. filename
+    os.execute(compile)
 end
 
 -- Create an autocommand group to avoid duplicate commands
