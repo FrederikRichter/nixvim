@@ -3,6 +3,8 @@
 extraPackages = with pkgs; [
     typst
     typstyle
+    # lua51Packages.lyaml
+    # luajitPackages.lyaml
 ];
 
 # AUTOFMT
@@ -15,7 +17,7 @@ local function execute_on_save(filename)
     print(result)
 
 
-    local compile = "typst compile " .. filename
+    local compile = "typst compile " .. filename .. " --root='../'"
     result = vim.fn.system(compile)  -- Attempt to execute the command
     print(result)
 end
@@ -25,7 +27,7 @@ vim.api.nvim_create_augroup("TypFileCommands", { clear = true })
 
 -- Set up an autocommand that triggers on saving .typ files
 vim.api.nvim_create_autocmd("BufWritePost", {
-    pattern = "*.typ",
+    pattern = "*/data/*.typ",
     callback = function()
         -- Get the current filename
         local filename = vim.fn.expand("%:p")  -- Get the full path of the file
