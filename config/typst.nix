@@ -17,7 +17,7 @@ local function execute_on_save(filename)
     print(result)
 
 
-    local compile = "typst compile " .. filename .. " --root='../' pdf/output.pdf"
+    local compile = "typst compile " .. filename .. " --root='/home/frederik/git/typkasten/' /home/frederik/git/typkasten/data/pdf/output.pdf"
     result = vim.fn.system(compile)  -- Attempt to execute the command
     print(result)
 end
