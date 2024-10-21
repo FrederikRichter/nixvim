@@ -15,7 +15,7 @@
     ./vimtex.nix
     ./oil.nix
     #./texkasten.nix
-    #./treesitter.nix
+    ./treesitter.nix
     ./typst.nix
     ./lsp.nix
   ];
