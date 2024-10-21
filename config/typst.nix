@@ -23,7 +23,7 @@ extraPackages = with pkgs; [
  extraConfigLuaPost = ''
 function watch_typst()
     local filename = vim.fn.expand("%:p")  -- Get the full path of the file
-    local compile = "typst watch " .. filename .. " --root='/home/frederik/Zettel/' /tmp/output.pdf --open zathura"
+    local compile = "typst watch " .. filename .. " --root='../' /tmp/output.pdf --open zathura"
 
     -- Spawn a new process to run the command asynchronously
     local handle
