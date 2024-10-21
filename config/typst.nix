@@ -2,8 +2,11 @@
 {
 extraPackages = with pkgs; [
     typst
-    tinymist
 ];
+
+plugins.lsp.servers.typst_lsp = {
+    enable = true;
+};
 
 # AUTOFMT
 # extraConfigLuaPost = ''
