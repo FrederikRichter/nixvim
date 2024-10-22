@@ -6,13 +6,13 @@
     ./cmp.nix
     # ./autosession.nix
     #./neoscroll.nix
-    ./luasnip.nix
+    #./luasnip.nix
     ./betterescape.nix
     ./chadtree.nix
     ./dashboard.nix
     ./fugitive.nix
     ./telescope.nix
-    ./vimtex.nix
+    #./vimtex.nix
     ./oil.nix
     #./texkasten.nix
     ./treesitter.nix
