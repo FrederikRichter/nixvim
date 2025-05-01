@@ -29,11 +29,9 @@
             { name = "buffer"; }
             { name = "luasnip"; }
             { name = "git"; }
-            { name = "greek"; }
             { name = "nvim_lua"; }
             { name = "pandoc_nvim"; }
             { name = "treesitter"; }
-            { name = "rg"; }
             { name = "tmux"; }
             { name = "zsh"; }
             { name = "luasnip"; }
