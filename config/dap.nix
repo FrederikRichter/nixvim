@@ -9,8 +9,7 @@
     plugins.dap-lldb = {
         enable = true;
         settings = {
-                codelldb_path = "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/bin/codelldb";
-
+                codelldb_path = "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/lldb-1.10.0/share/vscode/extensions/vadimcn.vscode-lldb/lldb";
             };
     };
     extraPackages = with pkgs; [
