@@ -1,5 +1,6 @@
 {pkgs, config, lib, ...}:
 {
+    plugins.dap-virtual-text.enable = true;
     plugins.dap = {
         enable = true;
         settings = {
