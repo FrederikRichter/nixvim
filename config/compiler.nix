@@ -1,0 +1,5 @@
+{
+plugins.compiler = {
+    enable = true;
+};
+}

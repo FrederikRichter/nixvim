@@ -1,3 +1,4 @@
+{pkgs, ...}:
 {
 plugins.dap = {
     enable = true;
@@ -8,4 +9,7 @@ plugins.dap-ui = {
 plugins.dap-lldb = {
     enable = true;
 };
+extraPackages = with pkgs; [
+lldb
+];
 }
