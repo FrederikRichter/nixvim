@@ -1,5 +1,0 @@
-{
-plugins.compiler = {
-    enable = true;
-};
-}

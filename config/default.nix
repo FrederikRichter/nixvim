@@ -4,7 +4,6 @@
   imports = [ 
     ./nixvim.nix
     ./cmp.nix
-    ./compiler.nix
     ./dap.nix
     # ./autosession.nix
     #./luasnip.nix
