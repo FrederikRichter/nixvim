@@ -9,7 +9,7 @@
             #     };
             # };
             "<leader>fg" = "live_grep";
-            "<leader>ff" = "file_browser";
+            "<leader>ff" = "find_files";
         };
     };
 }
