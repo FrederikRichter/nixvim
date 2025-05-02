@@ -1,5 +1,13 @@
 {pkgs, config, lib, ...}:
 {
+
+    extraPackages = with pkgs; [
+        lldb
+        coreutils
+        vscode-extensions.vadimcn.vscode-lldb
+        gdb
+    ];
+
     plugins.dap-virtual-text.enable = true;
     plugins.dap = {
         enable = true;
@@ -8,6 +16,13 @@
                 executables = {
                     lldb = {
                         command = lib.getExe' pkgs.lldb "lldb-dap";
+                    };
+                    cppdbg = {
+                        command = "gdb";
+                        args = [
+                            "-i"
+                            "dap"
+                        ];
                     };
                 };
             };
@@ -18,7 +33,7 @@
                         command = "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb";
                         args = [
                             "--port"
-                                "13000"
+                            "13000"
                         ];
                     };
                 };
@@ -37,11 +52,6 @@
         };
     };
 
-    extraPackages = with pkgs; [
-        lldb
-            coreutils
-            vscode-extensions.vadimcn.vscode-lldb
-    ];
     keymaps = [
     {
         mode = "n";
@@ -109,4 +119,6 @@
             silent = true;
         };
     }];
+
+
 }
