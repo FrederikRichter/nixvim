@@ -1,13 +1,5 @@
 {pkgs, config, lib, ...}:
 {
-
-    extraPackages = with pkgs; [
-        lldb
-        coreutils
-        vscode-extensions.vadimcn.vscode-lldb
-        gdb
-    ];
-
     plugins.dap-virtual-text.enable = true;
     plugins.dap = {
         enable = true;
@@ -16,20 +8,6 @@
                 executables = {
                     lldb = {
                         command = lib.getExe' pkgs.lldb "lldb-dap";
-                    };
-                    cppdbg = {
-                        command = "gdb";
-                        args = [
-                            "-i"
-                            "dap"
-                        ];
-                    };
-                    gdb = {
-                        command = "gdb";
-                        args = [
-                            "-i"
-                            "dap"
-                        ];
                     };
                 };
             };
@@ -40,32 +18,10 @@
                         command = "${pkgs.vscode-extensions.vadimcn.vscode-lldb}/share/vscode/extensions/vadimcn.vscode-lldb/adapter/codelldb";
                         args = [
                             "--port"
-                            "13000"
+                                "13000"
                         ];
                     };
                 };
-            };
-            configurations =
-                let
-                program.__raw = ''
-                function()
-                return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. '/', "file")
-                end
-                '';
-            gdb-config = {
-                inherit program;
-                name = "Launch (GDB)";
-                type = "gdb";
-                request = "launch";
-                cwd = ''''${workspaceFolder}'';
-                stopOnEntry = false;
-            };
-            in
-            {
-                cpp = [
-                    gdb-config
-                ];
-
             };
         };
     };
@@ -81,6 +37,11 @@
         };
     };
 
+    extraPackages = with pkgs; [
+        lldb
+            coreutils
+            vscode-extensions.vadimcn.vscode-lldb
+    ];
     keymaps = [
     {
         mode = "n";
@@ -148,6 +109,4 @@
             silent = true;
         };
     }];
-
-
 }
