@@ -45,6 +45,45 @@
     keymaps = [
     {
         mode = "n";
+        key = "<leader>e";
+        action.__raw = ''
+            function()
+            require("dapui").eval()
+            end
+            '';
+        options = {
+            desc = "Eval Expression";
+            silent = true;
+        };
+    }
+    {
+        mode = "n";
+        key = "<leader>c";
+        action.__raw = ''
+            function()
+            require("dap").continue()
+            end
+            '';
+        options = {
+            desc = "Continue Debugger";
+            silent = true;
+        };
+    }
+    {
+        mode = "n";
+        key = "<leader>bp";
+        action.__raw = ''
+            function()
+            require("dap").toggle_breakpoint()
+            end
+            '';
+        options = {
+            desc = "Toggle Breakpoint";
+            silent = true;
+        };
+    }
+    {
+        mode = "n";
         key = "<leader>db";
         action.__raw = ''
             function()
