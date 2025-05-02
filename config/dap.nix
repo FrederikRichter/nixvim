@@ -24,6 +24,13 @@
                             "dap"
                         ];
                     };
+                    gdb = {
+                        command = "gdb";
+                        args = [
+                            "-i"
+                            "dap"
+                        ];
+                    };
                 };
             };
             servers = {
@@ -37,6 +44,28 @@
                         ];
                     };
                 };
+            };
+            configurations =
+                let
+                program.__raw = ''
+                function()
+                return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. '/', "file")
+                end
+                '';
+            gdb-config = {
+                inherit program;
+                name = "Launch (GDB)";
+                type = "gdb";
+                request = "launch";
+                cwd = ''''${workspaceFolder}'';
+                stopOnEntry = false;
+            };
+            in
+            {
+                cpp = [
+                    gdb-config
+                ];
+
             };
         };
     };
