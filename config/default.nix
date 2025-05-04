@@ -14,7 +14,7 @@
     ./telescope.nix
     ./vimtex.nix
     ./oil.nix
-    ./treesitter.nix
+    #./treesitter.nix
     ./typst.nix
     ./lsp.nix
   ];
