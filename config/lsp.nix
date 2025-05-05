@@ -5,9 +5,9 @@
             clangd = {
                 enable = true;
             };
-            typst_lsp = {
-                enable = true;
-            };
+            # typst_lsp = {
+            #     enable = true;
+            # };
             nixd = {
                 enable = true;
             };
