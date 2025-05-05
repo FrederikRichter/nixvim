@@ -6,7 +6,7 @@
                 enable = true;
             };
             typst_lsp = {
-                enabke = true;
+                enable = true;
             };
             nixd = {
                 enable = true;
