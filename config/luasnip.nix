@@ -2,10 +2,12 @@
     plugins.luasnip = {
         enable = true;
         fromLua = [
-            { paths = "./luasnippets/" ; }
+        {
+            paths = ./luasnippets;
+        }
         ];
         settings = {
-                enable_autosnippets = true;
-            };
+            enable_autosnippets = true;
+        };
     };
 }
