@@ -4,5 +4,8 @@
         fromLua = [
             { paths = "./luasnippets/" ; }
         ];
+        settings = {
+                enable_autosnippets = true;
+            };
     };
 }

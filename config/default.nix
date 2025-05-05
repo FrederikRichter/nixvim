@@ -6,7 +6,7 @@
     ./cmp.nix
     ./dap.nix
     # ./autosession.nix
-    #./luasnip.nix
+    ./luasnip.nix
     ./betterescape.nix
     ./chadtree.nix
     ./dashboard.nix
