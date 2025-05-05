@@ -5,6 +5,12 @@
             clangd = {
                 enable = true;
             };
+            typst_lsp = {
+                enabke = true;
+            };
+            nixd = {
+                enable = true;
+            };
         };
         inlayHints = true;
     };
