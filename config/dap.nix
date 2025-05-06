@@ -39,8 +39,8 @@
 
     extraPackages = with pkgs; [
         lldb
-            coreutils
-            vscode-extensions.vadimcn.vscode-lldb
+        coreutils
+        vscode-extensions.vadimcn.vscode-lldb
     ];
     keymaps = [
     {
@@ -74,7 +74,7 @@
         key = "<leader>m";
         action.__raw = ''
             function()
-                local output = vim.fn.system({"make"})
+                local output = vim.fn.system({"cmake . && make"})
                 print(output)
             end
             '';
