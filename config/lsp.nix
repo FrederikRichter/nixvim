@@ -16,6 +16,11 @@
     };
     plugins.lsp-format = {
         enable = true;
+        settings = {
+            clangd = {
+                # todo: proper indent
+            };
+        };
     };
     plugins.tiny-inline-diagnostic = {
         enable = true;
