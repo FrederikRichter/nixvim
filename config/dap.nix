@@ -74,7 +74,7 @@
         key = "<leader>m";
         action.__raw = ''
             function()
-                local output = vim.fn.system("cmake . && make")
+                local output = vim.fn.system("cmake -S . -B build && cmake --build build")
                 print(output)
             end
             '';
