@@ -17,11 +17,10 @@
       # Disable useless providers
       loaded_ruby_provider = 0; # Ruby
       loaded_perl_provider = 0; # Perl
-      loaded_python_provider = 0; # Python 2
-    };
+      loaded_python_provider = 0; # Python 2 };
     colorschemes.base16 = {
         enable = true;
-        colorscheme = "gruvbox-light-hard";
+        colorscheme = "gruvbox-dark-hard";
     };
 
     clipboard = {
@@ -58,10 +57,10 @@
       cursorline = false; # Highlight the screen line of the cursor
       cursorcolumn = false; # Highlight the screen column of the cursor
       signcolumn = "yes"; # Whether to show the signcolumn
-      colorcolumn = "100"; # Columns to highlight
+      #colorcolumn = "100"; # Columns to highlight
       laststatus = 3; # When to use a status line for the last window
       fileencoding = "utf-8"; # File-content encoding for the current buffer
-      termguicolors = true; # Enables 24-bit RGB color in the |TUI|
+      #termguicolors = true; # Enables 24-bit RGB color in the |TUI|
       spell = false; # Highlight spelling mistakes (local to window)
       wrap = false; # Prevent text from wrapping
 
@@ -78,4 +77,5 @@
       # Folding
       foldlevel = 99; # Folds with a level higher than this number will be closed
     };
+  };
   }
