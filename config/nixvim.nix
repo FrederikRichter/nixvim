@@ -18,10 +18,6 @@
       loaded_ruby_provider = 0; # Ruby
       loaded_perl_provider = 0; # Perl
       loaded_python_provider = 0; # Python 2 };
-    colorschemes.base16 = {
-        enable = true;
-        colorscheme = "gruvbox-dark-hard";
-    };
 
     clipboard = {
 # Use system clipboard
