@@ -1,14 +1,5 @@
 {pkgs, ...}:
 {
-#    performance = {
-#        byteCompileLua = {
-#            enable = true;
-#            nvimRuntime = true;
-#            configs = true;
-#            plugins = true;
-#        };
-#    };
-
     extraConfigLuaPre = ''
         vim.api.nvim_set_keymap("", "<Space>", "<Nop>", { noremap = true, silent = true });
     '';
@@ -17,7 +8,12 @@
       # Disable useless providers
       loaded_ruby_provider = 0; # Ruby
       loaded_perl_provider = 0; # Perl
-      loaded_python_provider = 0; # Python 2 };
+      loaded_python_provider = 0; # Python 2
+    };
+    colorschemes.base16 = {
+        enable = true;
+        colorscheme = "gruvbox-light-medium";
+    };
 
     clipboard = {
 # Use system clipboard
