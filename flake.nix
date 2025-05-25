@@ -33,10 +33,5 @@
           default = nvim;
         };
       };
-    
-    # Define homemanager module output
-      flake = {
-        homeManagerModules.nixvim = import ./config/default.nix;
-      };
     };
 }
