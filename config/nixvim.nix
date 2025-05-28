@@ -15,16 +15,12 @@
         colorscheme = "gruvbox-light-medium";
     };
 
+    # Setup clipboard support
     clipboard = {
-# Use system clipboard
-        register = "unnamedplus";
+      providers.wl-copy.enable = true;
 
-        providers = {
-            wl-copy = {
-                enable = true;
-                package = pkgs.wl-clipboard;
-            };
-        };
+      # Sync system clipboard
+      register = "unnamedplus";
     };
 
     opts = {
