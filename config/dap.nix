@@ -69,20 +69,6 @@
             silent = true;
         };
     }
-        {
-        mode = "n";
-        key = "<leader>m";
-        action.__raw = ''
-            function()
-                local output = vim.fn.system("cmake -S . -B build && cmake --build build")
-                print(output)
-            end
-            '';
-        options = {
-            desc = "Toggle Breakpoint";
-            silent = true;
-        };
-    }
     {
         mode = "n";
         key = "<leader>bp";
