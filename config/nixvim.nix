@@ -4,7 +4,7 @@
         vim.api.nvim_set_keymap("", "<Space>", "<Nop>", { noremap = true, silent = true });
     '';
     globals = {
-    mapleader = ";";
+    mapleader = " ";
       # Disable useless providers
       loaded_ruby_provider = 0; # Ruby
       loaded_perl_provider = 0; # Perl

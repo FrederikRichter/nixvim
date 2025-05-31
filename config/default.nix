@@ -6,7 +6,7 @@
     ./cmp.nix
     ./cmake.nix
     ./dap.nix
-    ./lazygit.nix
+    ./neogit.nix
     # ./autosession.nix
     ./luasnip.nix
     ./betterescape.nix
