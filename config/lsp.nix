@@ -4,6 +4,20 @@
         servers = {
             clangd = {
                 enable = true;
+                settings = {
+                    cmd = [
+                            "clangd"
+                            "--background-index"
+                            "--clang-tidy"
+                            "--completion-style=bundled"
+                            "--cross-file-rename"
+                    ];
+                    filetypes = [
+                        "c"
+                        "cpp"
+                        "h"
+                    ];
+                    };
             };
             tinymist = {
                 enable = true;
