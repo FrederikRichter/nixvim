@@ -30,7 +30,8 @@
           default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
         };
         packages = {
-          default = nvim;
+            inherit nvim;
+            default = nvim;
         };
       };
     };
