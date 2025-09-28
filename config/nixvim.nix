@@ -10,10 +10,6 @@
       loaded_perl_provider = 0; # Perl
       loaded_python_provider = 0; # Python 2
     };
-    colorschemes.base16 = {
-        enable = true;
-        colorscheme = "gruvbox-light-medium";
-    };
 
     # Setup clipboard support
     clipboard = {
@@ -22,6 +18,14 @@
       # Sync system clipboard
       register = "unnamedplus";
     };
+    
+    colorschemes.gruvbox-material-nvim = {
+            enable = true;
+        settings = {
+                contrast = "medium";
+                colors = "light";
+            };
+        };
 
     opts = {
       updatetime = 100; # Faster completion
