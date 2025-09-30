@@ -1,7 +1,7 @@
 {
 plugins.web-devicons.enable = true;
 plugins.chadtree = {
-enable = true;
+enable = false;
 };
 keymaps = [
       {

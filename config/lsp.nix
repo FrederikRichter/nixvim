@@ -1,6 +1,6 @@
 {
     plugins.lsp = {
-        enable = true;
+        enable = false;
         servers = {
             clangd = {
                 enable = true;
