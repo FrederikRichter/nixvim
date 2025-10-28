@@ -4,7 +4,7 @@
   imports = [ 
     ./nixvim.nix
     ./cmp.nix
-    ./cmake.nix
+    # ./cmake.nix
     ./dap.nix
     ./neogit.nix
     # ./autosession.nix
