@@ -11,6 +11,7 @@
                             "--clang-tidy"
                             "--completion-style=bundled"
                             "--cross-file-rename"
+                            "--fallback-style=webkit"
                     ];
                     filetypes = [
                         "c"
