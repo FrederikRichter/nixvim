@@ -1,7 +1,7 @@
 {
     plugins.compiler = {
         enable = true;
-    }
+    };
     keymaps = [
     {
         action = "<cmd>CompilerOpen<cr>";
