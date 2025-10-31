@@ -3,8 +3,8 @@
   # Import all your configuration modules here
   imports = [ 
     ./nixvim.nix
+    ./compiler.nix
     ./cmp.nix
-    # ./cmake.nix
     ./dap.nix
     ./neogit.nix
     # ./autosession.nix
