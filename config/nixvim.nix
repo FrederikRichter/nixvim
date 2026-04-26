@@ -52,7 +52,7 @@
       #colorcolumn = "100"; # Columns to highlight
       laststatus = 3; # When to use a status line for the last window
       fileencoding = "utf-8"; # File-content encoding for the current buffer
-      #termguicolors = true; # Enables 24-bit RGB color in the |TUI|
+      termguicolors = true; # Enables 24-bit RGB color in the |TUI|
       spell = false; # Highlight spelling mistakes (local to window)
       wrap = false; # Prevent text from wrapping
 
