@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{...}:
 {
     plugins.treesitter = {
         enable = true;
@@ -17,10 +17,5 @@
             };
         };
         nixvimInjections = true;
-        grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-            typst
-            cpp
-            rust
-        ];
     };
 }

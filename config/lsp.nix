@@ -37,4 +37,10 @@
     plugins.tiny-inline-diagnostic = {
         enable = true;
     };
+    plugins.lsp-format = {
+        enable = true;
+        settings = {
+            sync = true;
+        };
+    };
 }

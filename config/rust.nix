@@ -1,10 +1,8 @@
 {pkgs, ...}:
 {
     extraPackages = with pkgs; [
-        rustup
         rustfmt
-        rust-analyzer
-        clippy
+        lspmux
     ];
 
     plugins.rustaceanvim = {
@@ -15,11 +13,16 @@
             };
             server = {
                 cmd = [
-                    "rustup"
                     "rust-analyzer"
                 ];
                 default_settings = {
                     rust-analyzer = {
+                        installCargo = true;
+                        installRustc = true;
+                        installClippy = true;
+                        cargo = {
+                            allFeatures = true;
+                            };
                         check = {
                             command = "clippy";
                         };
