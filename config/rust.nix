@@ -1,8 +1,10 @@
 {pkgs, ...}:
 {
     extraPackages = with pkgs; [
+        rustup
         rustfmt
         lspmux
+        rust-analyzer
     ];
 
     plugins.rustaceanvim = {
@@ -13,6 +15,9 @@
             };
             server = {
                 cmd = [
+                    "rustup"
+                    "run"
+                    "nightly"
                     "rust-analyzer"
                 ];
                 default_settings = {

@@ -1,4 +1,6 @@
+{pkgs, ...}:
 {
+    extraPackages = with pkgs; [ rustfmt ];
     plugins.lsp = {
         enable = true;
         servers = {
@@ -21,9 +23,24 @@
                     };
             };
             rust_analyzer = {
-                enable = false; 
+                enable = true; 
                 installCargo = true;
                 installRustc = true;
+                settings = {
+                    check = {
+                        command = "clippy"; 
+                        extraArgs = ["--all-targets"];
+                    };
+                    cargo = {
+                        allFeatures = true;
+                    };
+                    procMacro = {
+                        enable = true;
+                    };
+                    rustfmt = {
+                        enable = true;
+                    };
+                };
             };
             tinymist = {
                 enable = true;
@@ -41,6 +58,7 @@
         enable = true;
         settings = {
             sync = true;
+            format_on_save = true;
         };
     };
 }

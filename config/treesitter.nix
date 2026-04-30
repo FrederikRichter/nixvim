@@ -2,14 +2,10 @@
 {
     plugins.treesitter = {
         enable = true;
+        highlight = {
+            enable = true;
+        };
         settings = {
-            highlight = {
-                additional_vim_regex_highlighting = true;
-                custom_captures = { };
-                disable = [
-                ];
-                enable = true;
-            };
             sync_install = false;
 
             indent = {
