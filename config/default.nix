@@ -15,7 +15,7 @@
     ./telescope.nix
     ./vimtex.nix
     ./oil.nix
-    # ./rust.nix
+    ./rust.nix
     #./treesitter.nix
     ./typst.nix
     ./lsp.nix

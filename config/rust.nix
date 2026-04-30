@@ -5,7 +5,7 @@
         rustfmt
         rust-analyzer
         clippy
-];
+    ];
 
     plugins.rustaceanvim = {
         enable = true;
@@ -30,7 +30,6 @@
                         };
                     };
                 };
-                standalone = false;
             };
 
         };

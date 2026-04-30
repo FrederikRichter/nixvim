@@ -20,8 +20,8 @@
                     ];
                     };
             };
-            rust-analyzer = {
-                enable = true; 
+            rust_analyzer = {
+                enable = false; 
                 installCargo = true;
                 installRustc = true;
             };

@@ -18,9 +18,9 @@
         };
         nixvimInjections = true;
         grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-            latex
             typst
             cpp
+            rust
         ];
     };
 }
