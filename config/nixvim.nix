@@ -20,12 +20,11 @@
       register = "unnamedplus";
     };
     
-    colorschemes.gruvbox-material-nvim = {
+    colorschemes.catppuccin = {
             enable = true;
         settings = {
-                contrast = "medium";
-                colors = "light";
-            };
+            flavour = "mocha";          
+        };
         };
 
     opts = {
