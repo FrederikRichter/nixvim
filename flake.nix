@@ -16,22 +16,31 @@
         "aarch64-darwin"
       ];
 
+      flake = {
+        overlays.default = final: prev: {
+          nvim = self.packages.${prev.stdenv.hostPlatform.system}.nvim;
+          nixvim = self.packages.${prev.stdenv.hostPlatform.system}.nvim;
+        };
+      };
+
       perSystem = { pkgs, system, ... }: let
         nixvimLib = nixvim.lib.${system};
         nixvim' = nixvim.legacyPackages.${system};
+
         nixvimModule = {
           inherit pkgs;
           module = import ./config/default.nix;
           extraSpecialArgs = { inherit pkgs; };
         };
+
         nvim = nixvim'.makeNixvimWithModule nixvimModule;
       in {
-        checks = {
-          default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
-        };
+        checks.default =
+          nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
+
         packages = {
-            inherit nvim;
-            default = nvim;
+          inherit nvim;
+          default = nvim;
         };
       };
     };
