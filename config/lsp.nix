@@ -4,6 +4,9 @@
     plugins.lsp = {
         enable = true;
         servers = {
+            zls = {
+                enable = true;
+            };
             clangd = {
                 enable = true;
                 settings = {
